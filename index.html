@@ -205,8 +205,8 @@ img{display:block;max-width:100%}
 .brandmark{
   position:absolute;z-index:7;
   top:var(--s-4);left:var(--gutter);
-  height:36px;
-  width:auto;
+  width:min(62vw,268px);
+  height:auto;
   filter:brightness(0) invert(1) drop-shadow(0 1px 10px rgba(20,15,9,.75));
   opacity:1;
 }
@@ -402,6 +402,7 @@ img{display:block;max-width:100%}
     --t-lead:15px;
   }
   .plate{aspect-ratio:1/1}
+  .brandmark{width:min(66vw,238px)}
   .card{margin-top:-20px;padding:var(--s-5) var(--gutter) var(--s-4);gap:var(--s-4)}
   .pillars{gap:var(--s-1) var(--s-3)}
   .pillars li:not(:last-child)::after{width:3px;height:3px}
@@ -417,6 +418,7 @@ img{display:block;max-width:100%}
    ============================================================ */
 @media (max-width:900px) and (orientation:landscape){
   .plate{aspect-ratio:auto;height:52svh}
+  .brandmark{width:min(34vw,240px)}
   .card{margin-top:-20px}
   .people{grid-template-columns:1fr 1fr;gap:var(--s-3) var(--s-5)}
 }
